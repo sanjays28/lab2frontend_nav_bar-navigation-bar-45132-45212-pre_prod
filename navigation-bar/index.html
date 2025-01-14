@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Component</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/navigation.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    <header>
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="/" aria-label="Home">
+                    <img src="images/logo.png" alt="Site Logo" class="nav-logo">
+                </a>
+                <button class="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <div class="nav-categories">
+                <ul class="category-list" role="menubar">
+                    <li class="category-item" role="none">
+                        <button class="category-button" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                            Electronics
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-hidden="true">
+                            <li role="none"><a href="#" role="menuitem">Phones</a></li>
+                            <li role="none"><a href="#" role="menuitem">Laptops</a></li>
+                            <li role="none"><a href="#" role="menuitem">Tablets</a></li>
+                        </ul>
+                    </li>
+                    <li class="category-item" role="none">
+                        <button class="category-button" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                            Clothing
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-hidden="true">
+                            <li role="none"><a href="#" role="menuitem">Men</a></li>
+                            <li role="none"><a href="#" role="menuitem">Women</a></li>
+                            <li role="none"><a href="#" role="menuitem">Kids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="nav-search" role="search" aria-label="Site search">
+                <div class="search-wrapper">
+                    <input type="search" 
+                           class="search-input" 
+                           placeholder="Search products..." 
+                           aria-label="Search products">
+                    <button type="submit" class="search-button" aria-label="Submit search">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <main id="main-content">
+        <div class="title">Navigation Bar Component</div>
+    </main>
+</body>
+</html>
